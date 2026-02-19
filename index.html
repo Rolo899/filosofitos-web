@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofitos | Sabiduría Estoica para Niños</title>
+    <meta name="description" content="Ayuda a tu hijo a gestionar la ansiedad y las emociones con herramientas estoicas prácticas.">
+    <style>
+        /* PALETA CORPORATIVA FILOSOFITOS */
+        :root {
+            --azul-marino: #003366;
+            --amarillo: #FFC845;
+            --naranja: #FF7F11;
+            --blanco: #FFFFFF;
+            --texto-oscuro: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--blanco);
+            color: var(--texto-oscuro);
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-color: var(--azul-marino);
+            color: var(--blanco);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 8px solid var(--amarillo);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+
+        /* BOTONES CTA */
+        .btn {
+            display: inline-block;
+            background-color: var(--amarillo);
+            color: var(--azul-marino);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid var(--amarillo);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255, 200, 69, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--blanco);
+            border: 2px solid var(--blanco);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--blanco);
+        }
+
+        /* SECCIÓN LEAD MAGNET (EL GANCHO) */
+        .lead-magnet {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .book-mockup {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .book-mockup img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .magnet-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .magnet-content h2 {
+            color: var(--azul-marino);
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            color: var(--naranja);
+        }
+
+        /* FORMULARIO */
+        .email-form {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* DISCLAIMER MÉDICO (COMPLIANCE) */
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #eee;
+            margin-top: 3rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .form-group { flex-direction: column; }
+            .btn-outline { margin-left: 0; margin-top: 10px; display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO HEADER -->
+    <header class="hero">
+        <h1>Pensar con claridad. Actuar con valentía.</h1>
+        <p>Herramientas de filosofía estoica adaptadas para niños de 8 a 12 años. Ayuda a tu pequeño filósofo a construir su fortaleza interior.</p>
+        <a href="#descarga" class="btn">Obtener Recurso Gratis</a>
+        <a href="https://amazon.com/author/peter-rogers" class="btn btn-outline" target="_blank">Ver Libros en Amazon</a>
+    </header>
+
+    <!-- LEAD MAGNET SECTION -->
+    <section id="descarga" class="lead-magnet">
+        
+        <!-- IMAGEN DEL RECURSO -->
+        <div class="book-mockup">
+            <img src="media/filosofitos_art/file_83---d37ad6dd-0854-4dcf-954d-be162d40fe44.png" alt="Diario Estoico para Niños">
+            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">*Imagen con fines ilustrativos</p>
+        </div>
+
+        <!-- COPY DE VENTA -->
+        <div class="magnet-content">
+            <h2>¿Tu hijo se frustra fácilmente?</h2>
+            <p>La ansiedad y los berrinches son normales, pero gestionarlos es una habilidad que se aprende. El estoicismo no es reprimir emociones, es entenderlas.</p>
+            
+            <ul class="feature-list">
+                <li><strong>El Círculo de Control:</strong> Enséñale a distinguir lo que depende de él y lo que no.</li>
+                <li><strong>La Pausa del Emperador:</strong> Técnica de 60 segundos para enfriar la ira.</li>
+                <li><strong>Diario de Gratitud:</strong> 3 preguntas nocturnas para dormir mejor.</li>
+            </ul>
+
+            <!-- FORMULARIO DE CAPTACIÓN -->
+            <div class="email-form">
+                <h3 style="margin-top: 0; color: var(--azul-marino);">Descarga el Kit &quot;Pequeño Estoico&quot; Gratis</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recibe la hoja de trabajo imprimible en tu email.</p>
+                <form action="TU_LINK_DE_CONVERTKIT_O_SUBSTACK" method="POST" class="form-group">
+                    <input type="email" placeholder="Tu mejor email..." required class="form-input">
+                    <button type="submit" class="btn" style="border:none; cursor: pointer;">¡Lo quiero!</button>
+                </form>
+                <p style="font-size: 0.7rem; margin-top: 10px; color: #888;">🔒 Odiamos el spam tanto como tú. Darse de baja es fácil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & COMPLIANCE -->
+    <footer class="disclaimer">
+        <p><strong>Aviso Importante:</strong> Este contenido es educativo y está basado en principios de la filosofía estoica y la psicología cognitivo-conductual. No sustituye el consejo, diagnóstico o tratamiento médico profesional. Si tu hijo presenta síntomas de ansiedad severa, consulta siempre a un especialista.</p>
+        <p>© 2026 Editorial Filosofitos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
